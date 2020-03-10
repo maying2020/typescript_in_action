@@ -1,4 +1,6 @@
 // 高级类型：交叉类型（适合做对象的混入）和联合类型（使类型具有一定的不确定性，可以增强代码的灵活性）
+// 交叉类型：将多个类型合并为一个类型 新的类型具有所有类型得到特性
+// 联合类型：类型并不确定 可以为多个类型中的一个
  interface DogInterface{
    run():void
  }
@@ -6,7 +8,7 @@
  interface CatInterface{
   jump():void
 }
-// 取所有类型的并集
+// 交叉类型取所有类型的并集
 let pet : DogInterface & CatInterface = {
   run(){},
   jump(){}
@@ -15,11 +17,10 @@ let pet : DogInterface & CatInterface = {
 let a:number|string='a'
 // 字符串联合类型
 let b :'a'| 'b' | 'c' = 'b'
-
 // 数字联合类型
 let c:1| 2 | 3 = 1
 
-// 对象的联和类型(实例取所有成员的交集)
+// 对象的联和类型(实例取所有类成员的交集)
   
 class Dog implements DogInterface{
   run(){}

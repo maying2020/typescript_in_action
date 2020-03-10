@@ -1,5 +1,5 @@
 "use strict";
-// 取所有类型的并集
+// 交叉类型取所有类型的并集
 var pet = {
     run: function () { },
     jump: function () { }
@@ -10,7 +10,7 @@ var a = 'a';
 var b = 'b';
 // 数字联合类型
 var c = 1;
-// 对象的联和类型(实例取所有成员的交集)
+// 对象的联和类型(实例取所有类成员的交集)
 var Dog = /** @class */ (function () {
     function Dog() {
     }
