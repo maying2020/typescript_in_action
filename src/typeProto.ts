@@ -15,15 +15,15 @@ class javaScript{
 }
 
 // 类型断言法则 
-function getLanguage(type: Type){
-let lang = type ===  Type.Strong ? new Java(): new javaScript;
-if((lang as Java).helloJava){
-  (lang as Java).helloJava()
-} else {
-  (lang as javaScript).javaScript()
-}
-return lang
-}
+// function getLanguage(type: Type){
+// let lang = type ===  Type.Strong ? new Java(): new javaScript;
+// if((lang as Java).helloJava){
+//   (lang as Java).helloJava()
+// } else {
+//   (lang as javaScript).javaScript()
+// }
+// return lang
+// }
 
 // 缺点：需要多次添加，代码可读性差，类型保护机制就是为了解决这个问题的
 
