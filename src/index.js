@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // import './class-interface.ts'
 // import './fanxing'
 // import './typeProto'
-require("./advanced");
+// import './basic/advanced'
+require("./es6/c");
 var hello = 'Hello TypeScript';
 document.querySelectorAll('.app')[0].innerHTML = hello;
