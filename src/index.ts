@@ -4,7 +4,7 @@
 // import './fanxing'
 // import './typeProto'
 // import './basic/advanced'
-import './es6/c'
+// import './es6/c'
 
 let hello: string = 'Hello TypeScript'
 
