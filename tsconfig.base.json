@@ -1,0 +1,20 @@
+{
+  "files": [
+    "src/tsconfigceshi.ts"
+  ], //编译器需要编译的单个文件的列表
+  "include": [ //编译器需要编译的文件或者目录
+    "src"
+  ],
+  "exclude": [ //需要排除的文件
+    "src/tsconfiglib"
+  ]
+}
+
+// 与文件相关的选项
+
+
+// 在配置文件中引入
+{
+  "extends":"./tsconfig.base.json",
+  "exclude":[] // 覆盖base中的配置
+}
