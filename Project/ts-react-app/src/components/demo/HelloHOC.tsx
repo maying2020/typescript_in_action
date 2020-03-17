@@ -16,6 +16,3 @@ function HelloHOC<P>(WrappedComponent: React.ComponentType<P>) {
 }
 
 export default HelloHOC(HelloClass);
-
-
-// react声明文件还没有 很好的兼容高阶组件的类型检查 更方便的是使用hooks去编写
