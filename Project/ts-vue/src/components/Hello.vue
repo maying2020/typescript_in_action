@@ -7,7 +7,7 @@ import Vue from 'vue'
 export default Vue.extend({
     data() {
         return {
-            name: 'TypeScript'
+            name: 'hello组件-TypeScript'
         }
     }
 })
